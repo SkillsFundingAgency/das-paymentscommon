@@ -252,3 +252,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# External depencies (Not provided by NuGet)
+!**/assemblies/**/*.dll
