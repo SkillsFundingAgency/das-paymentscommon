@@ -27,7 +27,7 @@ public class CustomTask : DcfsTask
 }
 ```
 
-The base DcfsTask takes a parameter of databaseSchema, which is the SQL schema name that the table TaskLog is in for the component
+The base DcfsTask takes a parameter of databaseSchema, which is the SQL schema name that the table TaskLog is in for the component. The DDL can be found in the [/src/SFA.DAS.Payments.DCFS/TaskLog-DDL.sql](../../src/SFA.DAS.Payments.DCFS/TaskLog-DDL.sql)
 
 ## Follow the pattern
 
