@@ -5,8 +5,8 @@
     <version>1.0.0</version>
     <authors>DAS</authors>
     <owners>DAS</owners>
-    <licenseUrl>https://github.com/SkillsFundingAgency/das-shared-packages/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/SkillsFundingAgency/das-shared-packages</projectUrl>
+    <licenseUrl>https://github.com/SkillsFundingAgency/das-paymentscommon/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SkillsFundingAgency/das-paymentscommon</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Common code for Das payments DCFS components</description>
     <summary>Common code for Das payments DCFS components</summary>
