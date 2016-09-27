@@ -55,10 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\QueryResponse.cs" />
+    <Compile Include="Application\Response.cs" />
     <Compile Include="Context\ContextPropertyKeys.cs" />
     <Compile Include="Context\ContextWrapper.cs" />
     <Compile Include="Context\InvalidContextException.cs" />
     <Compile Include="DcfsTask.cs" />
+    <Compile Include="Domain\FundingSource.cs" />
+    <Compile Include="Domain\TransactionType.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Infrastructure\Data\DcfsRepository.cs" />
     <Compile Include="Logging\LoggingConfiguration.cs" />
@@ -66,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="SFA.DAS.Payments.DCFS.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
