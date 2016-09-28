@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C00CE90-9AC7-48DF-B15D-20F312B8F9E4}</ProjectGuid>
+    <ProjectGuid>{51C3F2CE-8E30-4DAA-9EDB-5BF7B779C749}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SFA.DAS.Payments.DCFS</RootNamespace>
-    <AssemblyName>SFA.DAS.Payments.DCFS</AssemblyName>
+    <RootNamespace>SFA.DAS.Payments.DCFS.StructureMap</RootNamespace>
+    <AssemblyName>SFA.DAS.Payments.DCFS.StructureMap</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,19 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CS.Common.External">
-      <HintPath>..\assemblies\CS.Common.External.dll</HintPath>
+    <Reference Include="SFA.DAS.Payments.DCFS">
+      <HintPath>..\SFA.DAS.Payments.DCFS\bin\Debug\SFA.DAS.Payments.DCFS.dll</HintPath>
     </Reference>
-    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="FastMember, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FastMember.1.1.0\lib\net40\FastMember.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.3.9\lib\net45\NLog.dll</HintPath>
+    <Reference Include="StructureMap, Version=4.4.1.451, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.4.1\lib\net45\StructureMap.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -55,23 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\QueryResponse.cs" />
-    <Compile Include="Application\Response.cs" />
-    <Compile Include="Context\ContextPropertyKeys.cs" />
-    <Compile Include="Context\ContextWrapper.cs" />
-    <Compile Include="Context\InvalidContextException.cs" />
-    <Compile Include="DcfsTask.cs" />
-    <Compile Include="Domain\FundingSource.cs" />
-    <Compile Include="Domain\TransactionType.cs" />
-    <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Infrastructure\Data\DcfsRepository.cs" />
-    <Compile Include="Infrastructure\DependencyResolution\IDependencyResolver.cs" />
-    <Compile Include="Logging\LoggingConfiguration.cs" />
+    <Compile Include="Infrastructure\DependencyResolution\DcfsConnectionStringPolicy.cs" />
+    <Compile Include="Infrastructure\DependencyResolution\StructureMapDependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="SFA.DAS.Payments.DCFS.nuspec" />
+    <None Include="SFA.DAS.Payments.DCFS.StructureMap.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
